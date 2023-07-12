@@ -1,1 +1,1 @@
-# Katalon-ReqresAPI-Testing-
+# Katalon-ReqresAPI-Testing
