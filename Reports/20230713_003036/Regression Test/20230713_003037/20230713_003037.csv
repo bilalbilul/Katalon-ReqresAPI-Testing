@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Regression Test,,,,2023-07-13 00:30:41,2023-07-13 00:30:53,11.635s,PASSED
+,,,,,,,
+Test Cases/Test Validation Get List User,,,,2023-07-13 00:30:42,2023-07-13 00:30:47,5.638s,PASSED
+"sendRequest(findTestObject(""GET/GET List User""))",,,,2023-07-13 00:30:42,2023-07-13 00:30:45,3.119s,PASSED
+"response = sendRequestAndVerify(findTestObject(""GET/GET List User""))",,,,2023-07-13 00:30:45,2023-07-13 00:30:47,1.759s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-07-13 00:30:47,2023-07-13 00:30:47,0.006s,PASSED
+"verifyElementsCount(response, ""data.first_name"", 6)",,,,2023-07-13 00:30:47,2023-07-13 00:30:47,0.070s,PASSED
+"verifyElementPropertyValue(response, ""data[3].first_name"", ""Eve"")",,,,2023-07-13 00:30:47,2023-07-13 00:30:47,0.043s,PASSED
+,,,,,,,
+Test Cases/Test Validation Get Single User,,,,2023-07-13 00:30:47,2023-07-13 00:30:49,1.297s,PASSED
+"sendRequest(findTestObject(""GET/GET Single User""))",,,,2023-07-13 00:30:48,2023-07-13 00:30:48,0.226s,PASSED
+"response = sendRequestAndVerify(findTestObject(""GET/GET Single User""))",,,,2023-07-13 00:30:48,2023-07-13 00:30:49,0.538s,PASSED
+"verifyElementPropertyValue(response, ""data.email"", ""janet.weaver@reqres.in"")",,,,2023-07-13 00:30:49,2023-07-13 00:30:49,0.066s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-07-13 00:30:49,2023-07-13 00:30:49,0.000s,PASSED
+,,,,,,,
+Test Cases/Test Validation Put Update,,,,2023-07-13 00:30:49,2023-07-13 00:30:51,2.073s,PASSED
+"sendRequest(findTestObject(""PUT/PUT Update User""))",,,,2023-07-13 00:30:49,2023-07-13 00:30:50,0.652s,PASSED
+"response = sendRequestAndVerify(findTestObject(""PUT/PUT Update User""))",,,,2023-07-13 00:30:50,2023-07-13 00:30:51,0.869s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-07-13 00:30:51,2023-07-13 00:30:51,0.000s,PASSED
+,,,,,,,
+Test Cases/Test Validation Post Register Success,,,,2023-07-13 00:30:51,2023-07-13 00:30:53,2.147s,PASSED
+"sendRequest(findTestObject(""GET/GET Single User""))",,,,2023-07-13 00:30:51,2023-07-13 00:30:51,0.174s,PASSED
+"sendRequest(findTestObject(""POST/POST Register Successful""))",,,,2023-07-13 00:30:51,2023-07-13 00:30:52,0.599s,PASSED
+"response = sendRequestAndVerify(findTestObject(""POST/POST Register Successful""))",,,,2023-07-13 00:30:52,2023-07-13 00:30:53,0.816s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2023-07-13 00:30:53,2023-07-13 00:30:53,0.000s,PASSED
